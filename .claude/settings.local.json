@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py -c \"import inspect; from fastmcp import FastMCP; print\\(inspect.signature\\(FastMCP.__init__\\)\\)\")",
+      "Bash(py -c \"import inspect; from fastmcp import FastMCP; print\\(inspect.signature\\(FastMCP.run\\)\\)\")",
+      "Bash(py -c \"import fastmcp.server.auth as a; print\\(dir\\(a\\)\\)\")",
+      "Bash(py -c \"import inspect; from fastmcp.server.auth import StaticTokenVerifier; print\\(inspect.signature\\(StaticTokenVerifier.__init__\\)\\)\")"
+    ]
+  }
+}
